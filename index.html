@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Keith Roberts">
+    <title>Interactive Isometry</title>
+    <link rel="icon" type="image/png" href="http://www.free-icons-download.net/images/cube-icon-69619.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <nav id="navbar" class="navbar navbar-expand-md fixed-top navbar-light bg-white">
+        <img id="icon" src="https://i.imgur.com/sJC8JIr.png" alt="cube icon">
+        <a id="brand" class="navbar-brand" href="#">Interactive Isometry</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navigation">
+            <ul class="nav mr-auto navbar-nav">
+                <li id="first-item" class="nav-item active">
+                    <a id="first-link" class="nav-link" href="#Download">Download</a>
+                </li>
+                <li id="second-item" class="nav-item">
+                    <a id="second-link" class="nav-link" href="#About">About</a>
+                </li>
+                <li id="last" class="nav-item">
+                    <a id="third-link" class="nav-link" href="https://github.com/jdan/isomer" target="_blank">Source</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <canvas id="art" height="640px" width="640px"></canvas>
+        <div id="controls" class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <button id="pattern" class="btn btn-block btn-danger btn-md outline">Generate New Pattern</button>
+                </div>
+                <div class="col-md-4 text-center">
+                    <button id="pallete"  class="btn btn-block btn-success btn-md outline">Change Pallete</button>
+                </div>
+                <div class="col-md-4 text-center">
+                    <button id="coloring" class="btn btn-block btn-warning btn-md outline">Random Coloring</button>
+                </div>
+            </div> 
+            <div class="row">
+                <div id="current" class="col-md-12 text-center">
+                    Current Pallete: Random Coloring
+                </div>
+            </div>   
+        </div>
+    </main>    
+    <footer class="page-footer white center-on-small-only">
+        <div id="first-container" class="container-fluid">
+            <div id="footer-info" class="row">
+                <div class="col-md-6">
+                    <h4 id="About">About This Project:</h4>
+                    <p>This project was created using a graphical library/framework called Isomer.js.
+                    You can view the documentation for this library by looking under the "Links" section
+                    or by clicking the "Source" tab on the navigation menu at the top of the screen. This
+                    project simulates generative three dimensional art by randomly generating isometric structures with random colors or a chosen pallete of
+                    colors. Users can also download generated structures by clicking the "Download" tab on the 
+                    navigation menu.
+                    </p>
+                </div>
+                <div id="links" class="col-md-6">
+                    <h4>Links:</h4>
+                    <div>
+                        <h5><a href="http://www.github.com/KeithSRoberts" target="_blank">My Github</a></h5>
+                        <h5><a href="http://jdan.github.io/isomer/" target="_blank">Isomer.js Documentation</a></h5>
+                        <h5><a href="https://coolors.co/baa7b0-b2abbf-b1b5c8-bfd5e2-c7ebf0" target="_blank">Pallete Generator</a></h5>
+                    </div>    
+                </div>
+            </div>    
+        </div>
+        <div id="second-container" class="footer-copyright">
+            <div class="container-fluid">
+                <p id="copyright">All Rights Reserved © 2018 Copyright: <a href="https://www.github.com/KeithSRoberts">Keith Roberts</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/isomer.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

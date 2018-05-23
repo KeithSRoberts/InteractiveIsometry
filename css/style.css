@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+li {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+nav {
+    border-bottom: 1px solid black;
+}
+
+#current {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+#links {
+    padding-left: 20px;
+    border-top: 1px solid black;
+}
+
+.col-md-6 {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: left;
+}
+
+#footer-info{
+    padding-bottom: 20px;
+}
+
+#navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.footer-copyright {
+    border-top: 1px solid black;
+    padding-top: 20px;
+}
+
+#icon {
+    height: 32px;
+    width: 32px;
+}
+
+#first-link {
+    color: #E94F37;
+}
+
+#first-item:hover {
+    background-color: #E94F37;
+}
+
+#second-link {
+    color: #4FB477;
+}
+
+#second-item:hover {
+    background-color: #4FB477;
+}
+
+#third-link {
+    color: rgb(231, 199, 94);
+}
+
+#last:hover {
+    background-color: rgb(231, 199, 94);
+}
+
+#third-link:hover, #second-link:hover, #first-link:hover {
+    color: white;
+}
+
+#last {
+    border-right: none;
+}
+
+#brand {
+    padding: 10px;
+    padding-left: 20px;
+}
+
+body {
+    padding-top: 56px;
+    height: 100%
+}
+
+ul {
+    height: 57px;
+}
+
+.nav-item {
+    border: none;
+    height: 100%;
+    padding: 10px;
+}
+
+.nav-link {
+    height: 56px;
+}
+
+#art {
+    padding-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 380px;
+    width: 380px;
+}
+
+#copyright {
+    display: inline;
+    background-color: white;
+}
+
+h5 > a, p > a {
+    color: red;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid black;
+}
+
+footer  div {
+    padding: 10px;
+}
+
+#second-container {
+    background-image: url('../img/background.jpg');
+}
+
+main {
+    padding-bottom: 190px;
+}
+
+#controls {
+    height: 80px;
+}
+
+.btn.outline {
+    background: none;
+    padding: 12px 22px;
+}
+.btn-success.outline, .btn-warning.outline, .btn-danger.outline {
+    border: 1px solid black;
+    color: black;
+}
+.btn-success.outline:hover,  .btn-danger.outline:hover,  .btn-warning.outline:hover {
+    color: white;
+    border-color: black;
+}
+
+@media (min-width: 640px) {
+    #art {
+        height: 640px;
+        width: 640px;
+    }
+}
+
+@media (min-width: 768px) {
+    #links {
+        padding-left: 60px;
+        border-top: none;
+    }
+    .nav-item {
+        border-left: 1px solid black;
+    }
+    #last {
+        border-right: 1px solid black;
+    }
+    main {
+        padding-bottom: 90px;
+    }
+}    
